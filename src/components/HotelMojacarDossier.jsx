@@ -251,7 +251,7 @@ const HotelMojacarDossier = () => {
       {/* HEADER HERO */}
       <header className="relative bg-slate-900 text-white py-24 px-6 md:px-12 lg:px-24 overflow-hidden">
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-600 via-slate-900 to-black"></div>
-        <img src="/img/fachada.png" alt="Hotel Fondo" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" />
+        <img src="img/fachada.png" alt="Hotel Fondo" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" />
         
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <span className="uppercase tracking-[0.3em] text-amber-500 text-sm font-semibold mb-4 block">
@@ -304,9 +304,9 @@ const HotelMojacarDossier = () => {
               </div>
               <div 
                 className="bg-slate-200 rounded-2xl h-[450px] flex items-center justify-center relative overflow-hidden shadow-lg border border-slate-200 cursor-pointer group"
-                onClick={() => setSelectedImage('/img/fachada.png')}
+                onClick={() => setSelectedImage('img/fachada.png')}
               >
-                 <img src="/img/fachada.png" alt="Fachada Principal" className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
+                 <img src="img/fachada.png" alt="Fachada Principal" className="w-full h-full object-cover absolute inset-0 group-hover:scale-105 transition-transform duration-700" />
                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-10 flex items-center justify-center">
                     <Maximize className="text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-md" size={32} />
                  </div>
@@ -353,9 +353,9 @@ const HotelMojacarDossier = () => {
                 {/* MAPA CATASTRO */}
                 <div 
                   className="mt-6 rounded-xl overflow-hidden h-40 bg-white relative border border-slate-700 cursor-pointer group"
-                  onClick={() => setSelectedImage('/img/mapa-catastro.png')}
+                  onClick={() => setSelectedImage('img/mapa-catastro.png')}
                 >
-                   <img src="/img/mapa-catastro.png" alt="Mapa Catastral" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
+                   <img src="img/mapa-catastro.png" alt="Mapa Catastral" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/20 transition-all">
                       <Maximize className="text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-md" size={24} />
                    </div>
@@ -375,7 +375,7 @@ const HotelMojacarDossier = () => {
                       className="bg-slate-100 aspect-video rounded-lg relative overflow-hidden flex items-center justify-center cursor-pointer"
                       onClick={() => setSelectedImage(`/img/plano-${item}.png`)}
                     >
-                      <img src={`/img/plano-${item}.png`} alt={`Plano Técnico ${item}`} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform" />
+                      <img src={`img/plano-${item}.png`} alt={`Plano Técnico ${item}`} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform" />
                       <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/5 transition-colors z-10 flex items-center justify-center">
                          <Maximize className="text-slate-800 opacity-0 group-hover:opacity-100 transition-opacity bg-white/80 rounded-full p-1.5" size={28} />
                       </div>
